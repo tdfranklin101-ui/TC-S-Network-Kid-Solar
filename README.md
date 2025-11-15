@@ -1,22 +1,32 @@
-# TC-S-Network-Kid-Solar
+# TC-S Network Kid Solar
 
-AI voice assistant with GPT-4o integration
+AI assistant with image analysis and conversational memory system.
 
-## Part of TC-S Network Platform
+## Features
 
-This repository is part of the TC-S Network 14-repository microservices architecture. All services connect to a shared Supabase database and work together as a cohesive platform.
+- Image analysis with OpenAI Vision
+- Conversational memory
+- Session management
+- Energy calculation for AI interactions
 
 ## Setup
 
 ```bash
 npm install
+cp .env.example .env
+# Add OPENAI_API_KEY to .env
 npm run dev
 ```
 
-## Documentation
+## API Endpoints
 
-See the main [TC-S Network documentation](https://github.com/tdfranklin101-ui/TC-S-Network-Shared) for complete setup instructions.
+- `GET /api/sessions` - List AI sessions
+- `GET /api/memories` - List stored memories
+
+## Environment Variables
+
+- `OPENAI_API_KEY` - OpenAI API key for image analysis
 
 ## License
 
-MIT © TC-S Network Foundation
+MIT - TC-S Network Foundation
